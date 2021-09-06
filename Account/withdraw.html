@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Withdraw</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Signout</a></li>
+                </ul>
+                <ul>
+                    <li><div class="balanceButton">CheckBalance</div></li>
+                    <li><a href="./Deposit.html">Deposit</a></li>
+                    <li><a href="#">Withdraw</a></li>
+                    <li><a href="./Transfer.html">Transfer</a></li>
+                    <li><a href="#">Transactions</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div>
+                <form autocomplete="off" style="text-align: center">
+                    <div class="loginImg" style="text-align: center">
+                        <img
+                            src="./img/withdrawal.png"
+                            width="120px"
+                            height="120px"
+                            alt="profile"
+                        />
+                    </div>
+                    <div class="accountInput">
+                        <label for="amount">Amount to be Withdrawn</label>
+                        <input
+                            id="wdraw"
+                            required
+                            placeholder="$"
+                            type="number"
+                            name="amount"
+                        />
+                    </div>
+                    <button id="withdrawButton" class="customButton">
+                        Withdraw
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="./js/utils.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/withdraw.js"></script>
+</html>

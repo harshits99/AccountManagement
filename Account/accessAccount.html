@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Account </title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="./index.html">Signout</a></li>
+                 </ul>
+            </nav>
+        </header>
+        <form onsubmit="return validate()" class="accountForm"autocomplete="off" action="transaction.html">
+            <div class="loginImg" style="text-align: center;">
+                <img src="./img/profile.png" width="120px" height="120px" alt="profile">
+            </div>
+            <div class=accountInput>
+            <label for="accNo">AccountNumber</label>
+            <input id="acc" required placeholder="Account Number" name="accNo" type="nummber" maxlength="10" minlength="6">
+            </div>
+            <button type="submit" class="customButton">Submit</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function validate(){
+        var acc=document.getElementById("acc");
+
+        if(acc.value.trim()==""){
+            alert("Please fill the form properly");
+            return false;
+        }
+        else{
+            alert("Successful");
+            return true;
+        }
+    }
+</script>
+
